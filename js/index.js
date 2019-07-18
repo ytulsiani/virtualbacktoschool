@@ -161,7 +161,7 @@ function loadItems(){
     groceryItems += `<div class ="Item">`;
     groceryItems += `<div class="container"><img class="Item-Img" src ='${item.image}'></div>`;
     groceryItems += `<div class="Item-Name">${item.itemName}</div>`;
-    groceryItems += `<div class="Item-Units">${item.servingUnits}</div>`;
+    //groceryItems += `<div class="Item-Units">${item.servingUnits}</div>`;
     groceryItems += `<div class="Our-Price"><font color ="black">PRICE:</font> $${item.ourPrice}</div>`;
     //groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
     groceryItems += `<a ${clicktype}="addToCart(${id});" class="addbutton">add to cart</a>`;
