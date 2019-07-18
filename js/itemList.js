@@ -4,7 +4,7 @@ var itemList = [
     "image": "img/backtoschool/kidpack.png",
     "itemName": "Kid Backpack",
     "servingUnits": "each",
-    "ourPrice": 42,
+    "ourPrice": 20,
     "retailPrice": 60,
     "unitsReceipt": "unit",
     "nameReceipt": "Backpack"
@@ -14,7 +14,7 @@ var itemList = [
     "image": "img/backtoschool/kidsupplies.png",
     "itemName": "School Supplies",
     "servingUnits": "set",
-    "ourPrice": 21,
+    "ourPrice": 10,
     "retailPrice": 30,
     "unitsReceipt": "set",
     "nameReceipt": "Supplies"
@@ -24,7 +24,7 @@ var itemList = [
     "image": "img/backtoschool/kidsneak.png",
     "itemName": "Kid Sneakers",
     "servingUnits": "pair",
-    "ourPrice": 56,
+    "ourPrice": 30,
     "retailPrice": 30,
     "unitsReceipt": "pair",
     "nameReceipt": "Sneakers"
@@ -35,7 +35,7 @@ var itemList = [
     "image": "img/backtoschool/kidcoat.png",
     "itemName": "Kid Coat",
     "servingUnits": "each",
-    "ourPrice": 24,
+    "ourPrice": 20,
     "retailPrice": 35,
     "unitsReceipt": "unit",
     "nameReceipt": "Coat"
@@ -45,8 +45,7 @@ var itemList = [
     "image": "img/backtoschool/kidboots.png",
     "itemName": "Kid Boots",
     "servingUnits": "pair",
-
-    "ourPrice": 60,
+    "ourPrice": 25,
     "retailPrice": 85,
     "unitsReceipt": "pair",
     "nameReceipt": "Boots"
@@ -57,7 +56,7 @@ var itemList = [
     "image": "img/backtoschool/kidsock.png",
     "itemName": "Kid Socks",
     "servingUnits": "6-Pack",
-    "ourPrice": 85,
+    "ourPrice": 8,
     "retailPrice": 120,
     "unitsReceipt": "pack",
     "nameReceipt": "Socks"
@@ -87,7 +86,7 @@ var itemList = [
     "image": "img/backtoschool/teensneak2.png",
     "itemName": "Sneakers",
     "servingUnits": "pair",
-    "ourPrice": 40,
+    "ourPrice": 30,
     "retailPrice": 99,
     "unitsReceipt": "pair",
     "nameReceipt": "Sneakers"
@@ -99,7 +98,7 @@ var itemList = [
     "image": "img/backtoschool/teenboot.png",
     "itemName": "pair",
     "servingUnits": "20lbs bag",
-    "ourPrice": 32,
+    "ourPrice": 40,
     "retailPrice": 45,
     "unitsReceipt": "pair",
     "nameReceipt": "Boots"
@@ -109,7 +108,7 @@ var itemList = [
     "image": "img/backtoschool/teensneak.png",
     "itemName": "Sneakers",
     "servingUnits": "pair",
-    "ourPrice": 10,
+    "ourPrice": 45,
     "retailPrice": 15,
     "unitsReceipt": "pair",
     "nameReceipt": "Sneakers"
@@ -120,7 +119,7 @@ var itemList = [
     "image": "img/backtoschool/teensocks.png",
     "itemName": "Teen Socks",
     "servingUnits": "6-Pack",
-    "ourPrice": 15,
+    "ourPrice": 10,
     "retailPrice": 21,
     "unitsReceipt": "packs",
     "nameReceipt": "Socks"
