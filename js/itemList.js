@@ -96,7 +96,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/backtoschool/teenboot.png",
-    "itemName": "pair",
+    "itemName": "Teen Boots",
     "servingUnits": "20lbs bag",
     "ourPrice": 40,
     "retailPrice": 45,
@@ -106,7 +106,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/backtoschool/teensneak.png",
-    "itemName": "Sneakers",
+    "itemName": "Athletic Shoes",
     "servingUnits": "pair",
     "ourPrice": 45,
     "retailPrice": 15,
