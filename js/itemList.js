@@ -16,7 +16,7 @@ var itemList = [
     "servingUnits": "6-Pack",
     "ourPrice": 10,
     "retailPrice": 21,
-    "unitsReceipt": "packs",
+    "unitsReceipt": "pack",
     "nameReceipt": "Socks"
   },
 {
