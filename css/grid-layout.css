@@ -67,16 +67,15 @@ html, body {
 .singleline {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 14% 12% 24% 10% 5%;
+    grid-template-columns: 14% 12% 20% 10% 5%;
     background-image: url("../img/2midreceipt.png");
     background-size: 100% 100%;
     position: relative;
-    width: 36vw;
     cursor: pointer;
 }
 
 .singleline > div {
-    margin-left:6vw;
+    margin-left:6.5vw;
 }
 
 .bottomline {
@@ -215,9 +214,23 @@ html, body {
   font: blue;
 }
 
+@media screen and (min-width: 1025px) {
+  #quantity {
+    padding-left: 30px;
+  }
+  #unit {
+    padding-left: 20px;
+  }
+  .singleline {
+    grid-template-columns: 14% 16% 20% 15% 5%;
+  }
+  .singleline > div {
+    margin-left: 50px;
+  }
+}
 
 /* if viewed on an iPad */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -228,7 +241,7 @@ html, body {
     display: grid;
     grid-area: 1 / 1 / 4 / 4;
     grid-template-areas: "Item Item Item";
-    grid-gap: 10px;
+    grid-gap: 5px;
   }
 
   .Item-Name {
@@ -249,11 +262,13 @@ html, body {
   }
 
   .singleline {
-    width: 40vw;
+    width: 30vw;
+    font-size: .82em;
+    grid-template-columns: 16% 12% 20% 8% 5%;
   }
 
   .singleline > div {
-    margin-left: 55px;
+    margin-left: 5vw;
   }
 
   .cartTotal {
@@ -324,13 +339,12 @@ html, body {
     width: 100%;
 
       font-size: .92em;
-      grid-template-columns: 16% 14% 22% 10% 4%;
-    }
-
-  .singleline > div {
-    margin-left: 15vw;
+    grid-template-columns: 16% 14% 18% 10% 4%;
   }
 
+  .singleline > div {
+    padding-left: 10vw;
+  }
   .cartTotal {
     grid-area: 2 / 1 / 2 / 4;
   }
