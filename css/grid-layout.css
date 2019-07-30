@@ -14,10 +14,8 @@
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
-
-
 
 .grid-container {
   display: grid;
@@ -43,7 +41,6 @@ html, body {
 .Receipt {
   display: grid;
   grid-area: 1 / 6 / 4 / 7;
-  grid-template-columns: 100%;
   grid-template-rows: 1fr;
   grid-template-areas: ".";
   background-color: var(--sidepanel-background);
@@ -52,40 +49,40 @@ html, body {
 }
 
 .topimage {
-    background-image: url("../img/1topreceipt.png");
-    background-size: 100% 100%;
-    position: relative;
-    height: 150px;
+  background-image: url("../img/1topreceipt.png");
+  background-size: 100% 100%;
+  position: relative;
+  height: 150px;
 }
 
-.emptyline{
-    background-image: url("../img/2midreceipt.png");
-    background-size: 100% 100%;
-    position: relative;
+.emptyline {
+  background-image: url("../img/2midreceipt.png");
+  background-size: 100% 100%;
+  position: relative;
 }
 
 .singleline {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 14% 12% 20% 10% 5%;
-    background-image: url("../img/2midreceipt.png");
-    background-size: 100% 100%;
-    position: relative;
-    cursor: pointer;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 14% 12% 20% 10% 5%;
+  background-image: url("../img/2midreceipt.png");
+  background-size: 100% 100%;
+  position: relative;
+  cursor: pointer;
 }
 
 .singleline > div {
-    margin-left:6.5vw;
+  margin-left: 6.5vw;
 }
 
 .bottomline {
-    background-image: url("../img/3bottomreceipt.png");
-    background-size: 100% 100%;
-    background-position: center bottom;
-    position: relative;
-    width: 100%;
-    height: 200px;
-    vertial-align: bottom;
+  background-image: url("../img/3bottomreceipt.png");
+  background-size: 100% 100%;
+  background-position: center bottom;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  vertial-align: bottom;
 }
 
 .Donate {
@@ -93,7 +90,6 @@ html, body {
   background-color: var(--sidepanel-background);
   text-align: center;
   margin-top: -100px;
-
 }
 
 .donatebutton2 {
@@ -104,7 +100,7 @@ html, body {
 	margin-left: 10%;
 	margin-bottom: 10px;
 	border: none;
-	font-size: 2.5em;
+	font-size: 200%;
 	font-weight: 400;
 	font-family: 'Oswald';
 	line-height: 1;
@@ -114,11 +110,9 @@ html, body {
   cursor: pointer;
 }
 
-
 .donatebutton2:hover {
 	background-color: #D77450;
 }
-
 
 .Items-List {
   display: grid;
@@ -189,10 +183,8 @@ html, body {
 
 .teamPics {
   border-radius: 100%;
-
 	width: 85px;
 	height: 85px;
-
 	/*border: 3px solid white;*/
 	background-color: white;
 	/*margin-left: 15%;*/
@@ -229,8 +221,8 @@ html, body {
   }
 }
 
-/* if viewed on an iPad */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+/* if viewed on an iPad/iPad Pro */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -247,7 +239,6 @@ html, body {
   .Item-Name {
     font-size: .8em;
   }
-
 
   .Item-Units {
     font-size: .7em;
@@ -286,125 +277,27 @@ html, body {
   }
 
   .thankyou {
-    font-size: .93em;
+    font-size: .80em;
   }
-
 }
 
-
-
-/* if viewed on a small phone */
-@media screen and (min-width: 371px) and (max-width: 767px) {
-  .grid-container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 0.1fr);
-
-  }
-
-  .Items-List {
-    display: grid;
-    grid-area: 1 / 1 / 1 / 4;
-    grid-template-areas: "Item Item Item";
-  }
-
-  .Item-Name {
-    font-size: 1.1em;
-  }
-  .Our-Price {
-    font-size: 1.0em;
-  }
-
-  .Item-Units {
-    font-size: .8em;
-  }
-
-
-  .Item-Retail {
-    font-size: .8em;
-
-  }
-
-  .Item-Units {
-    font-size: .8em;
-  }
-
-
-  .Item-Retail {
-    font-size: .95em;
-
-  }
-
-  .singleline {
-    grid-area: 2 / 1 / 2 / 4;
-    width: 100%;
-
-      font-size: .92em;
-    grid-template-columns: 16% 14% 18% 10% 4%;
-  }
-
-  .singleline > div {
-    padding-left: 10vw;
-  }
-  .cartTotal {
-    grid-area: 2 / 1 / 2 / 4;
-  }
-
-  .Receipt {
-    grid-area: 2 / 1 / 2 / 4;
-    padding-bottom: 20px;
-  }
-
-  .Donate {
-    grid-area: 3 / 1 / 3 / 4;
-    text-align: center;
-  }
-
-
-  .donatebutton2 {
-    font-size: 2em;
-  	margin-left: 10%;
-    width: 80%;
-  	margin-bottom: 10px;
-  }
-
-  .thankyou {
-
-    font-size: .93em;
-
-  }
-  .teamPics {
-    border-radius: 100%;
-
-  	width: 70px;
-  	height: 70px;
-
-  	/*border: 3px solid white;*/
-  	background-color: white;
-  	/*margin-left: 15%;*/
-  }
-
-}
-
-
-
-
-/* if viewed on a small phone */
-@media screen and (max-width: 370px) {
+/* if viewed on a iPhone Plus or Pixel/Pixel 2 */
+@media screen and (max-width: 415px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 0.1fr);
-
   }
 
   .Items-List {
     display: grid;
-    grid-area: 1 / 1 / 1 / 3;
+    grid-area: 1 / 1 / 1 / 5;
     grid-template-areas: "Item Item";
   }
 
   .Item-Name {
     font-size: 1.1em;
   }
+
   .Our-Price {
     font-size: 1.0em;
   }
@@ -413,45 +306,125 @@ html, body {
     font-size: .8em;
   }
 
+  .Item-Retail {
+    font-size: .8em;
+  }
+
+  .Item-Units {
+    font-size: .8em;
+  }
+
+  .Item-Retail {
+    font-size: .95em;
+  }
+
+  .singleline {
+    grid-area: 2 / 1 / 2 / 5;
+    width: 100%;
+    font-size: .92em;
+    grid-template-columns: 16% 14% 18% 10% 4%;
+  }
+
+  .singleline > div {
+    padding-left: 10vw;
+  }
+
+  .cartItems {
+    width: 397px;
+  }
+
+  .cartTotal {
+    grid-area: 2 / 1 / 2 / 5;
+  }
+
+  .Receipt {
+    grid-area: 2 / 1 / 2 / 5;
+    padding-bottom: 20px;
+  }
+
+  .Donate {
+    grid-area: 3 / 1 / 3 / 5;
+    text-align: center;
+  }
+
+  .donatebutton2 {
+    font-size: 200%;
+  	margin-left: 10%;
+    width: 80%;
+  	margin-bottom: 10px;
+  }
+
+  .thankyou {
+    font-size: .93em;
+  }
+
+  .teamPics {
+    border-radius: 100%;
+  	width: 70px;
+  	height: 70px;
+  	background-color: white;
+  }
+}
+
+/* if viewed on a iPhone 6/7/8 and X */
+@media screen and (max-width: 376px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 0.1fr);
+  }
+
+  .Items-List {
+    display: grid;
+    grid-area: 1 / 1 / 1 / 5;
+    grid-template-areas: "Item Item";
+  }
+
+  .Item-Name {
+    font-size: 1.1em;
+  }
+
+  .Our-Price {
+    font-size: 1.0em;
+  }
+
+  .Item-Units {
+    font-size: .8em;
+  }
 
   .Item-Retail {
     font-size: .8em;
   }
 
   .singleline {
-    grid-area : 2 / 1 / 2 / 3;
+    grid-area : 2 / 1 / 2 / 5;
     width: 100%;
-
     font-size: .92em;
     grid-template-columns: 16% 14% 22% 10% 4%;
-
   }
 
-  .singleline > div {
-    margin-left: 15vw;
+  .cartItems {
+    width: 359px;
   }
 
   .cartTotal {
-    grid-area: 2 / 1 / 2 / 3;
+    grid-area: 2 / 1 / 2 / 5;
   }
 
   .Receipt {
-    grid-area: 2 / 1 / 2 / 3;
+    grid-area: 2 / 1 / 2 / 5;
   }
 
   .Donate {
-    grid-area: 3 / 1 / 3 / 3;
+    grid-area: 3 / 1 / 3 / 5;
     text-align: center;
-
   }
-
 
   .thankyou {
     font-size: .9em;
   }
 
   .donatebutton2 {
-    font-size: 2em;
+    font-size: 200%;
     margin-left: 10%;
     width: 80%;
     margin-bottom: 10px;
@@ -459,13 +432,88 @@ html, body {
 
   .teamPics {
     border-radius: 100%;
-
   	width: 75px;
   	height: 75px;
-
-  	/*border: 3px solid white;*/
   	background-color: white;
-  	/*margin-left: 15%;*/
+  }
+}
+
+/* if viewed on a Galaxy S5 */
+@media screen and (max-width: 361px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 0.1fr);
   }
 
+  .Items-List {
+    display: grid;
+    grid-area: 1 / 1 / 1 / 5;
+    grid-template-areas: "Item Item";
+  }
+
+  .Item-Name {
+    font-size: 1.1em;
+  }
+
+  .Our-Price {
+    font-size: 1.0em;
+  }
+
+  .Item-Units {
+    font-size: .8em;
+  }
+
+  .Item-Retail {
+    font-size: .8em;
+  }
+
+  .singleline {
+    grid-area : 2 / 1 / 2 / 5;
+    width: 100%;
+    font-size: .92em;
+    grid-template-columns: 16% 14% 22% 10% 4%;
+  }
+
+  .cartItems {
+    width: 345px;
+  }
+
+  .cartTotal {
+    grid-area: 2 / 1 / 2 / 5;
+  }
+
+  .Receipt {
+    grid-area: 2 / 1 / 2 / 5;
+  }
+
+  .Donate {
+    grid-area: 3 / 1 / 3 / 5;
+    text-align: center;
+  }
+
+  .thankyou {
+    font-size: .9em;
+  }
+
+  .donatebutton2 {
+    font-size: 200%;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .teamPics {
+    border-radius: 100%;
+  	width: 75px;
+  	height: 75px;
+  	background-color: white;
+  }
+}
+
+/* iPhone 5 */
+  @media screen and (max-width: 321px) {
+    .cartItems {
+      width: 303px;
+    }
+  }
 }
