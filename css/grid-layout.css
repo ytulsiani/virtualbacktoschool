@@ -22,7 +22,7 @@ html, body {
 .grid-container {
   display: grid;
   height: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: ". . . ." ". . . .";
   grid-column-gap: 1em;
@@ -141,7 +141,7 @@ html, body {
   height: 110px;
   max-width: 130px;
   padding-top: 40px;
-  padding-left: 
+  padding-left:
 }
 
 .Item-Units {
