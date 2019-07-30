@@ -14,7 +14,7 @@
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .grid-container {
@@ -49,40 +49,40 @@ html, body {
 }
 
 .topimage {
-    background-image: url("../img/1topreceipt.png");
-    background-size: 100% 100%;
-    position: relative;
-    height: 150px;
+  background-image: url("../img/1topreceipt.png");
+  background-size: 100% 100%;
+  position: relative;
+  height: 150px;
 }
 
 .emptyline {
-    background-image: url("../img/2midreceipt.png");
-    background-size: 100% 100%;
-    position: relative;
+  background-image: url("../img/2midreceipt.png");
+  background-size: 100% 100%;
+  position: relative;
 }
 
 .singleline {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 14% 12% 20% 10% 5%;
-    background-image: url("../img/2midreceipt.png");
-    background-size: 100% 100%;
-    position: relative;
-    cursor: pointer;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 14% 12% 20% 10% 5%;
+  background-image: url("../img/2midreceipt.png");
+  background-size: 100% 100%;
+  position: relative;
+  cursor: pointer;
 }
 
 .singleline > div {
-    margin-left: 6.5vw;
+  margin-left: 6.5vw;
 }
 
 .bottomline {
-    background-image: url("../img/3bottomreceipt.png");
-    background-size: 100% 100%;
-    background-position: center bottom;
-    position: relative;
-    width: 100%;
-    height: 200px;
-    vertial-align: bottom;
+  background-image: url("../img/3bottomreceipt.png");
+  background-size: 100% 100%;
+  background-position: center bottom;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  vertial-align: bottom;
 }
 
 .Donate {
@@ -90,7 +90,6 @@ html, body {
   background-color: var(--sidepanel-background);
   text-align: center;
   margin-top: -100px;
-
 }
 
 .donatebutton2 {
@@ -111,11 +110,9 @@ html, body {
   cursor: pointer;
 }
 
-
 .donatebutton2:hover {
 	background-color: #D77450;
 }
-
 
 .Items-List {
   display: grid;
@@ -186,10 +183,8 @@ html, body {
 
 .teamPics {
   border-radius: 100%;
-
 	width: 85px;
 	height: 85px;
-
 	/*border: 3px solid white;*/
 	background-color: white;
 	/*margin-left: 15%;*/
